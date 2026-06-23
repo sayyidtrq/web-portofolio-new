@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sayyid Thariq Gilang Mutaqien - System Analyst &amp; Full-Stack Engineer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;700&amp;family=Geist:wght@400;500;600&amp;family=Rajdhani:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface": "#0f141b",
+                      "border-hairline": "#263246",
+                      "on-primary-fixed-variant": "#004e61",
+                      "secondary-fixed": "#7efbae",
+                      "secondary-fixed-dim": "#60de94",
+                      "text-primary": "#F2F5F7",
+                      "outline": "#879398",
+                      "surface-tint": "#5bd5fc",
+                      "tertiary": "#ffce91",
+                      "inverse-primary": "#006780",
+                      "inverse-surface": "#dfe2ed",
+                      "on-error": "#690005",
+                      "on-secondary-container": "#003119",
+                      "inverse-on-surface": "#2c3139",
+                      "on-primary-container": "#005266",
+                      "canvas-deep": "#070B12",
+                      "error": "#ffb4ab",
+                      "surface-container-lowest": "#0a0e15",
+                      "surface-container-high": "#262a32",
+                      "on-error-container": "#ffdad6",
+                      "on-tertiary": "#462b00",
+                      "on-tertiary-fixed-variant": "#643f00",
+                      "operational-green": "#58D68D",
+                      "surface-variant": "#31353d",
+                      "on-primary": "#003543",
+                      "primary": "#93e2ff",
+                      "on-secondary-fixed": "#00210f",
+                      "surface-container-low": "#181c23",
+                      "on-tertiary-fixed": "#2a1800",
+                      "surface-elevated": "#101827",
+                      "text-secondary": "#A7B0BE",
+                      "secondary-container": "#16a562",
+                      "outline-variant": "#3d484d",
+                      "on-surface": "#dfe2ed",
+                      "tertiary-container": "#ecaf5d",
+                      "on-background": "#dfe2ed",
+                      "architecture-cyan": "#73E0E6",
+                      "on-primary-fixed": "#001f28",
+                      "surface-primary": "#0A101B",
+                      "on-surface-variant": "#bcc8ce",
+                      "surface-container": "#1c2027",
+                      "surface-bright": "#353941",
+                      "primary-fixed": "#b7eaff",
+                      "background": "#0f141b",
+                      "on-secondary-fixed-variant": "#00522d",
+                      "error-container": "#93000a",
+                      "surface-container-highest": "#31353d",
+                      "on-tertiary-container": "#694200",
+                      "primary-container": "#4cc9f0",
+                      "primary-fixed-dim": "#5bd5fc",
+                      "surface-dim": "#0f141b",
+                      "on-secondary": "#00391d",
+                      "business-amber": "#F3B562",
+                      "secondary": "#60de94",
+                      "tertiary-fixed": "#ffddb6",
+                      "critical-coral": "#FF7A7A",
+                      "tertiary-fixed-dim": "#fabb67"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-gap-lg": "160px",
+                      "container-max": "1440px",
+                      "grid-columns": "12",
+                      "section-gap-sm": "96px",
+                      "margin-desktop": "80px",
+                      "unit": "4px",
+                      "gutter-desktop": "48px"
+              },
+              "fontFamily": {
+                      "metadata-mono": [
+                              "Geist Mono", "monospace"
+                      ],
+                      "section-title": [
+                              "Rajdhani", "Geist Sans", "sans-serif"
+                      ],
+                      "hero-display": [
+                              "Rajdhani", "Geist Sans", "sans-serif"
+                      ],
+                      "ui-label": [
+                              "Geist Mono", "sans-serif"
+                      ],
+                      "section-heading": [
+                              "Rajdhani", "Geist Sans", "sans-serif"
+                      ],
+                      "code-snippet": [
+                              "Geist Mono"
+                      ],
+                      "body-main": [
+                              "Geist Sans", "sans-serif"
+                      ],
+                      "hero-display-mobile": [
+                              "Rajdhani", "Geist Sans", "sans-serif"
+                      ],
+                      "body-lead": [
+                              "Geist Sans", "sans-serif"
+                      ]
+              },
+              "fontSize": {
+                      "metadata-mono": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "section-title": [
+                              "56px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "hero-display": [
+                              "80px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "ui-label": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "section-heading": [
+                              "36px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "code-snippet": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-main": [
+                              "17px",
+                              {
+                                      "lineHeight": "1.65",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "hero-display-mobile": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lead": [
+                              "22px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        /* Blueprint Grid and Atmospheric Glows */
+        .blueprint-canvas {
+            background-color: #070B12;
+            background-image: 
+                linear-gradient(to right, rgba(115, 224, 230, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(115, 224, 230, 0.03) 1px, transparent 1px);
+            background-size: 32px 32px;
+            position: relative;
+        }
+        .blueprint-canvas::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at top right, rgba(0, 53, 67, 0.15) 0%, transparent 60%),
+                        radial-gradient(circle at bottom left, rgba(88, 214, 141, 0.05) 0%, transparent 40%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Connecting Lines */
+        .connector-line {
+            position: absolute;
+            background-color: #263246; /* border-hairline */
+            z-index: 1;
+        }
+        .connector-vertical {
+            width: 1px;
+            height: 100%;
+        }
+        .connector-horizontal {
+            height: 1px;
+            width: 100%;
+        }
+        
+        /* Node Animations */
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(115, 224, 230, 0); }
+            50% { box-shadow: 0 0 15px 2px rgba(115, 224, 230, 0.2); }
+        }
+        .node-active {
+            animation: pulse-glow 3s infinite ease-in-out;
+        }
+
+        @keyframes slow-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .animate-slow-spin {
+            animation: slow-spin 30s linear infinite;
+        }
+        @keyframes counter-spin {
+            from { transform: rotate(360deg); }
+            to { transform: rotate(0deg); }
+        }
+        .animate-counter-spin {
+            animation: counter-spin 30s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-canvas-deep text-text-primary font-body-main antialiased min-h-screen blueprint-canvas overflow-x-hidden selection:bg-architecture-cyan/20 selection:text-architecture-cyan">
+<!-- Navigation (TopNavBar Component) -->
+<nav class="bg-surface-primary/80 dark:bg-surface-primary/80 font-ui-label text-ui-label fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-container-max rounded-full backdrop-blur-xl border-hairline border shadow-sm transition-all duration-300 ease-in-out flex justify-between items-center px-6 py-3 z-50">
+<!-- Brand -->
+<div class="font-metadata-mono text-metadata-mono font-bold text-architecture-cyan tracking-tighter uppercase">
+            STGM
+        </div>
+<!-- Links (Desktop) -->
+<ul class="hidden md:flex items-center gap-8 uppercase tracking-widest text-[12px]">
+<li class="">
+<a class="text-architecture-cyan font-bold border-b border-architecture-cyan pb-1 transition-all duration-300 ease-in-out" href="#">Home</a>
+</li>
+<li class="">
+<a class="text-text-secondary hover:text-text-primary transition-colors pb-1 border-b border-transparent hover:border-text-secondary" href="#persona">Persona</a>
+</li>
+<li class="">
+<a class="text-text-secondary hover:text-text-primary transition-colors pb-1 border-b border-transparent hover:border-text-secondary" href="#systems">Projects</a>
+</li>
+<li class="">
+<a class="text-text-secondary hover:text-text-primary transition-colors pb-1 border-b border-transparent hover:border-text-secondary" href="#">Experience</a>
+</li>
+<li class="">
+<a class="text-text-secondary hover:text-text-primary transition-colors pb-1 border-b border-transparent hover:border-text-secondary" href="#">Intention</a>
+</li>
+</ul>
+<!-- Action -->
+<div class="flex items-center gap-4">
+<button class="hidden md:flex items-center gap-2 bg-architecture-cyan text-on-primary font-ui-label text-ui-label px-4 py-2 rounded-full hover:bg-architecture-cyan/90 transition-colors uppercase tracking-widest text-[12px]">
+<span class="material-symbols-outlined text-[18px]">download</span>
+                Download CV
+            </button>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-text-secondary hover:text-text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="relative z-10 mx-auto max-w-container-max px-6 md:px-margin-desktop pt-32 pb-section-gap-lg">
+<!-- Hero Section -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter-desktop min-h-[819px] items-center mb-section-gap-lg">
+<!-- Hero Left (7 cols) -->
+<div class="col-span-1 md:col-span-7 flex flex-col justify-center relative">
+<!-- Decorative vertical line -->
+<div class="hidden md:block absolute left-0 top-0 h-full w-[1px] bg-border-hairline -ml-8"></div>
+<div class="space-y-6 max-w-3xl">
+<!-- Metadata Intro -->
+<div class="flex flex-col gap-2">
+<span class="font-metadata-mono text-metadata-mono text-architecture-cyan uppercase tracking-widest">Sayyid Thariq Gilang Mutaqien</span>
+<span class="font-metadata-mono text-metadata-mono text-text-secondary border border-border-hairline rounded-full px-3 py-1 w-max bg-surface-elevated/50">System Analyst &amp; Full-Stack Engineer</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-hero-display-mobile md:font-hero-display text-hero-display-mobile md:text-hero-display text-text-primary tracking-tight uppercase">
+                        I turn business complexity into systems that ship.
+                    </h1>
+<!-- Body Copy -->
+<p class="font-body-lead text-body-lead text-text-secondary max-w-2xl">
+                        I analyze how a business works, design how its system should work, and help build the solution—from process flows and ERDs to backend services and user interfaces.
+                    </p>
+<!-- Career Direction -->
+<div class="flex items-center gap-3 mt-4">
+<div class="w-1.5 h-1.5 rounded-full bg-business-amber"></div>
+<span class="font-metadata-mono text-metadata-mono text-text-secondary">Growing toward Solution Architecture.</span>
+</div>
+<!-- Actions -->
+<div class="flex flex-wrap items-center gap-4 pt-8 uppercase tracking-widest text-[12px]">
+<a class="bg-architecture-cyan text-on-primary font-ui-label text-ui-label px-6 py-3 rounded-xl hover:bg-architecture-cyan/90 transition-all flex items-center gap-2 group" href="#systems">
+                            Explore selected systems
+                            <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="border border-border-hairline text-text-primary font-ui-label text-ui-label px-6 py-3 rounded-xl hover:bg-surface-elevated hover:border-text-secondary transition-all flex items-center gap-2" href="#journey">
+                            View my journey
+                        </a>
+</div>
+</div>
+</div>
+<!-- Hero Right (5 cols) - Blueprint Diagram -->
+<div class="col-span-1 md:col-span-5 relative h-full min-h-[500px] flex items-center justify-center pt-16 md:pt-0">
+<div class="relative w-full max-w-md h-[500px] flex flex-col justify-between pl-12">
+<!-- Main Vertical Trunk -->
+<div class="absolute left-6 top-8 bottom-8 w-[1px] bg-border-hairline"></div>
+<!-- Node 1: Business Intent -->
+<div class="relative flex items-center group">
+<div class="absolute -left-6 w-6 h-[1px] bg-border-hairline"></div>
+<div class="absolute -left-7 w-2 h-2 rounded-full border border-business-amber bg-canvas-deep"></div>
+<div class="bg-surface-elevated border border-border-hairline rounded-lg p-3 w-full ml-4 transition-colors group-hover:border-outline-variant">
+<div class="font-metadata-mono text-metadata-mono text-business-amber mb-1">Phase 01</div>
+<div class="font-ui-label text-ui-label text-text-primary uppercase tracking-widest">Business Intent</div>
+</div>
+</div>
+<!-- Node 2: Process Analysis -->
+<div class="relative flex items-center group">
+<div class="absolute -left-6 w-6 h-[1px] bg-border-hairline"></div>
+<div class="absolute -left-7 w-2 h-2 rounded-full border border-border-hairline bg-canvas-deep"></div>
+<div class="bg-surface-elevated border border-border-hairline rounded-lg p-3 w-full ml-4 transition-colors group-hover:border-outline-variant">
+<div class="font-metadata-mono text-metadata-mono text-text-secondary mb-1">Phase 02</div>
+<div class="font-ui-label text-ui-label text-text-primary uppercase tracking-widest">Process Analysis</div>
+</div>
+</div>
+<!-- Node 3: System Design (Branching) -->
+<div class="relative flex items-start group">
+<div class="absolute -left-6 top-6 w-6 h-[1px] bg-border-hairline"></div>
+<div class="absolute -left-7 top-[20px] w-2 h-2 rounded-full border border-architecture-cyan bg-canvas-deep node-active"></div>
+<div class="w-full ml-4">
+<div class="bg-surface-elevated border border-architecture-cyan/30 rounded-lg p-3 mb-4 transition-colors group-hover:border-architecture-cyan/50 relative overflow-hidden">
+<div class="absolute inset-0 bg-architecture-cyan/5"></div>
+<div class="relative z-10">
+<div class="font-metadata-mono text-metadata-mono text-architecture-cyan mb-1 flex justify-between items-center">
+                                        Phase 03
+                                        <span class="material-symbols-outlined text-[14px]">schema</span>
+</div>
+<div class="font-ui-label text-ui-label text-text-primary uppercase tracking-widest">System Design</div>
+</div>
+</div>
+<!-- Sub-branches -->
+<div class="pl-6 relative space-y-3">
+<div class="absolute left-3 top-0 bottom-3 w-[1px] bg-border-hairline"></div>
+<div class="relative flex items-center">
+<div class="absolute -left-3 w-3 h-[1px] bg-border-hairline"></div>
+<div class="bg-canvas-deep border border-border-hairline rounded px-2 py-1 ml-2 font-metadata-mono text-[10px] text-text-secondary uppercase">Data Model (ERD)</div>
+</div>
+<div class="relative flex items-center">
+<div class="absolute -left-3 w-3 h-[1px] bg-border-hairline"></div>
+<div class="bg-canvas-deep border border-border-hairline rounded px-2 py-1 ml-2 font-metadata-mono text-[10px] text-text-secondary uppercase">Service Modules</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Node 4: Technical Delivery -->
+<div class="relative flex items-center group">
+<div class="absolute -left-6 w-6 h-[1px] bg-border-hairline"></div>
+<div class="absolute -left-7 w-2 h-2 rounded-full border border-border-hairline bg-canvas-deep"></div>
+<div class="bg-surface-elevated border border-border-hairline rounded-lg p-3 w-full ml-4 transition-colors group-hover:border-outline-variant">
+<div class="font-metadata-mono text-metadata-mono text-text-secondary mb-1">Phase 04</div>
+<div class="font-ui-label text-ui-label text-text-primary uppercase tracking-widest">Technical Delivery</div>
+</div>
+</div>
+<!-- Node 5: Working Solution -->
+<div class="relative flex items-center group mt-4">
+<div class="absolute -left-6 w-6 h-[1px] bg-operational-green"></div>
+<div class="absolute -left-7 w-2 h-2 rounded-full border-2 border-operational-green bg-canvas-deep"></div>
+<div class="bg-surface-elevated border border-operational-green/40 rounded-lg p-4 w-full ml-4 shadow-[0_0_15px_rgba(88,214,141,0.1)] relative overflow-hidden">
+<div class="absolute right-0 top-0 w-16 h-full bg-gradient-to-l from-operational-green/10 to-transparent"></div>
+<div class="font-metadata-mono text-metadata-mono text-operational-green mb-1 flex justify-between items-center">
+                                Outcome
+                                <span class="material-symbols-outlined text-[16px]">check_circle</span>
+</div>
+<div class="font-ui-label text-ui-label text-text-primary font-bold uppercase tracking-widest">Working Solution</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Selected Systems Preview -->
+<section class="relative pt-section-gap-sm mb-section-gap-lg" id="systems">
+<!-- Decorative Section Header Anchor -->
+<div class="absolute left-0 top-0 w-full h-[1px] bg-border-hairline"></div>
+<div class="absolute left-0 top-0 w-8 h-[1px] bg-architecture-cyan"></div>
+<div class="mb-16 pt-8">
+<h2 class="font-section-heading text-section-heading text-text-primary mb-4 flex items-center gap-4 uppercase">
+<span class="material-symbols-outlined text-architecture-cyan">account_tree</span>
+                    Selected systems
+                </h2>
+<p class="font-body-main text-body-main text-text-secondary max-w-2xl">
+                    Projects where I worked across business process, system design, and implementation.
+                </p>
+</div>
+<!-- Project 1: Perfish -->
+<div class="group block relative">
+<!-- Large 16:9 Visual Stage -->
+<div class="w-full aspect-[16/9] md:aspect-[21/9] bg-surface-elevated border border-border-hairline rounded-xl overflow-hidden relative mb-6">
+<!-- Glassmorphism overlay for info -->
+<div class="absolute top-6 left-6 z-20 backdrop-blur-md bg-canvas-deep/80 border border-border-hairline rounded-lg p-4 max-w-sm">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-2 h-2 rounded-full bg-architecture-cyan"></span>
+<span class="font-metadata-mono text-metadata-mono text-architecture-cyan uppercase tracking-wider">Flagship System</span>
+</div>
+<h3 class="font-section-heading text-2xl text-text-primary mb-1 uppercase">Perfish</h3>
+<p class="font-body-main text-sm text-text-secondary">End-to-End Fishery Supply Chain Management</p>
+</div>
+<!-- Conceptual Process Flow Diagram acting as the image -->
+<div class="absolute inset-0 p-8 pt-32 flex flex-col justify-center opacity-80 group-hover:opacity-100 transition-opacity duration-500" data-alt="A highly detailed, futuristic process flow diagram set in a dark, architectural cyberspace environment. The diagram illustrates an industrial supply chain featuring three distinct nodes: 'Procurement', 'Cold Storage', and 'Goods Release'. The nodes are connected by luminous, thin structural lines. The aesthetic is extremely modern and technical, utilizing a sleek palette of deep charcoal backgrounds, stark white text, and glowing cyan and amber geometric accents. The scene evokes a sense of complex system analysis and precision engineering." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAlFLvKW7Cvct0ukIurdb-Fdkz4GGLgOZq1vmQr4ZEkDc7u2SS2sJUixYnRokw6CCm2iFPcIt63pgH7y_Ev1oPTKvzgID2AXQeufzemkuBiQczEhRaIv2pwL-MkCA8kB9lQK5zWkZSt5r-tSKCZ8neaYdpkZRYqkeIhFZ4hNNtuQaUlcsJqhTui3ET6DGUFwvFeOB71VJMQq4lsAhtjHKyvGsviQdzDQQxHfBMiUjFgusqUQJFBIpoY1TnmtSDqc8kf07r2FW-Pdbc'); background-size: cover; background-position: center;">
+<!-- Fallback content if image fails or before load, providing the requested structural visual -->
+<div class="relative w-full max-w-4xl mx-auto flex items-center justify-between z-10 bg-surface-primary/50 backdrop-blur p-8 rounded-xl border border-border-hairline hidden md:flex">
+<!-- Connecting Line -->
+<div class="absolute left-10 right-10 top-1/2 h-[1px] bg-border-hairline -z-10"></div>
+<!-- Step 1 -->
+<div class="bg-canvas-deep border border-business-amber/50 rounded-lg p-4 w-48 text-center relative shadow-[0_0_20px_rgba(243,181,98,0.05)]">
+<span class="material-symbols-outlined text-business-amber mb-2 block text-[24px]">shopping_cart</span>
+<div class="font-ui-label text-text-primary uppercase tracking-widest text-[12px]">Procurement</div>
+<div class="font-metadata-mono text-[10px] text-text-secondary mt-1">Vendor Integration</div>
+</div>
+<!-- Arrow -->
+<div class="bg-canvas-deep border border-border-hairline rounded-full w-8 h-8 flex items-center justify-center z-10">
+<span class="material-symbols-outlined text-text-secondary text-[16px]">arrow_forward</span>
+</div>
+<!-- Step 2 -->
+<div class="bg-canvas-deep border border-architecture-cyan/50 rounded-lg p-4 w-48 text-center relative shadow-[0_0_20px_rgba(115,224,230,0.05)]">
+<span class="material-symbols-outlined text-architecture-cyan mb-2 block text-[24px]">ac_unit</span>
+<div class="font-ui-label text-text-primary uppercase tracking-widest text-[12px]">Cold Storage</div>
+<div class="font-metadata-mono text-[10px] text-text-secondary mt-1">Inventory Management</div>
+</div>
+<!-- Arrow -->
+<div class="bg-canvas-deep border border-border-hairline rounded-full w-8 h-8 flex items-center justify-center z-10">
+<span class="material-symbols-outlined text-text-secondary text-[16px]">arrow_forward</span>
+</div>
+<!-- Step 3 -->
+<div class="bg-canvas-deep border border-operational-green/50 rounded-lg p-4 w-48 text-center relative shadow-[0_0_20px_rgba(88,214,141,0.05)]">
+<span class="material-symbols-outlined text-operational-green mb-2 block text-[24px]">local_shipping</span>
+<div class="font-ui-label text-text-primary uppercase tracking-widest text-[12px]">Goods Release</div>
+<div class="font-metadata-mono text-[10px] text-text-secondary mt-1">Logistics &amp; Tracking</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Teaser details under image -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<div class="col-span-1 md:col-span-8">
+<p class="font-body-main text-text-secondary">
+                            Designed and developed a comprehensive system to track the lifecycle of fishery products from supplier procurement through cold storage inventory management to final dispatch. Replaced fragmented spreadsheets with a centralized, role-based web application.
+                        </p>
+</div>
+<div class="col-span-1 md:col-span-4 flex justify-start md:justify-end">
+<button class="text-architecture-cyan font-ui-label uppercase tracking-widest text-[12px] flex items-center gap-2 group hover:text-primary-container transition-colors">
+                            View System Details
+                            <span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">east</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Persona Section -->
+<section class="relative pt-section-gap-sm mb-section-gap-lg" id="persona">
+<div class="absolute left-0 top-0 w-full h-[1px] bg-border-hairline"></div>
+<div class="absolute left-0 top-0 w-8 h-[1px] bg-business-amber"></div>
+<div class="mb-16 pt-8">
+<h2 class="font-section-title text-section-title text-text-primary mb-4 uppercase">I like understanding the whole system.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter-desktop items-center"><!-- Left: Portrait -->
+<div class="relative group overflow-hidden rounded-xl border border-border-hairline">
+<div class="absolute inset-0 bg-gradient-to-t from-canvas-deep via-transparent to-transparent z-10"></div>
+<img alt="Sayyid Thariq Gilang Mutaqien - System Analyst &amp; Engineer" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoEOSmThxRE6nrLzErulgiRMIR9k6GchqoYAk3L2m33sxLXKfrVrAk5iy8VT0-VBGuLkxSDAmPgBp8MmxhTHLDYsWNmpa9ChuqAKct4AAUUAIiuoO8gt3N4u0GYn0JBNmbbvmTwFESC9z3-PWHJ8D5Ly1GnG-NPi2h0JVKbqEjCMqcXPuOzAKgGT3w6wAFtge_65cCwBGS9bw1wOsi1zGcxSoG_xnom7Sorfk4SwhStDRue3FsCPhnAR2MvE4bfT3775UR6BmGnlY"/>
+<div class="absolute bottom-6 left-6 z-20">
+<div class="font-metadata-mono text-[10px] text-architecture-cyan uppercase tracking-widest mb-1">Identity Verified</div>
+<div class="font-ui-label text-text-primary uppercase tracking-widest">S.T.G. Mutaqien</div>
+</div>
+</div>
+<!-- Right: Content Stack -->
+<div class="space-y-12">
+<div class="space-y-6 font-body-lead text-body-lead text-text-secondary">
+<p>My curiosity naturally moves across the entire software development lifecycle. I don't just want to build it; I want to know why it's built and how it impacts the business.</p>
+<p>From gathering requirements and mapping out business processes to architecting the database and writing the implementation code, I connect the dots between intention and execution.</p>
+</div>
+<!-- Thinking Loop Visual (Nested) -->
+<div class="relative h-[300px] flex items-center justify-center">
+<div class="absolute inset-0 m-auto rounded-full border border-border-hairline border-dashed w-[240px] h-[240px] animate-slow-spin flex items-center justify-center">
+<div class="absolute -top-[12px] w-6 h-6 rounded-full bg-surface border border-architecture-cyan flex items-center justify-center animate-counter-spin"><div class="w-2 h-2 rounded-full bg-architecture-cyan"></div></div>
+<div class="absolute -bottom-[12px] -right-[12px] w-6 h-6 rounded-full bg-surface border border-operational-green flex items-center justify-center animate-counter-spin"><div class="w-2 h-2 rounded-full bg-operational-green"></div></div>
+<div class="absolute -bottom-[12px] -left-[12px] w-6 h-6 rounded-full bg-surface border border-business-amber flex items-center justify-center animate-counter-spin"><div class="w-2 h-2 rounded-full bg-business-amber"></div></div>
+</div>
+<div class="absolute top-[20px] left-1/2 -translate-x-1/2 bg-surface-elevated/80 backdrop-blur border border-architecture-cyan/50 px-4 py-1 rounded-full text-architecture-cyan font-ui-label uppercase tracking-widest text-[10px]">Understand</div>
+<div class="absolute bottom-[40px] left-[10px] bg-surface-elevated/80 backdrop-blur border border-business-amber/50 px-4 py-1 rounded-full text-business-amber font-ui-label uppercase tracking-widest text-[10px]">Design</div>
+<div class="absolute bottom-[40px] right-[10px] bg-surface-elevated/80 backdrop-blur border border-operational-green/50 px-4 py-1 rounded-full text-operational-green font-ui-label uppercase tracking-widest text-[10px]">Deliver</div>
+<span class="material-symbols-outlined text-[32px] text-border-hairline absolute">all_inclusive</span>
+</div>
+</div></div>
+<!-- Evidence Rail -->
+<div class="mt-16 flex flex-wrap gap-y-4 border-t border-b border-border-hairline py-6 bg-surface-primary/30">
+<div class="font-metadata-mono text-metadata-mono text-text-secondary px-6 border-r border-border-hairline uppercase">Information Systems · University of Indonesia</div>
+<div class="font-metadata-mono text-metadata-mono text-text-secondary px-6 border-r border-border-hairline uppercase">cGPA 3.61 / 4.00</div>
+<div class="font-metadata-mono text-metadata-mono text-text-secondary px-6 uppercase">English EPT 583 / 677</div>
+</div>
+</section>
+<!-- Capability Model Section -->
+<section class="relative pt-section-gap-sm mb-section-gap-lg" id="capabilities">
+<div class="absolute left-0 top-0 w-full h-[1px] bg-border-hairline"></div>
+<div class="absolute left-0 top-0 w-8 h-[1px] bg-operational-green"></div>
+<div class="mb-16 pt-8">
+<h2 class="font-section-heading text-section-heading text-text-primary mb-4 flex items-center gap-4 uppercase">
+<span class="material-symbols-outlined text-operational-green">layers</span>
+            Working across the layers
+        </h2>
+<p class="font-body-main text-body-main text-text-secondary max-w-2xl">
+            The goal is not to know one isolated layer. It is to understand how the layers affect one another.
+        </p>
+</div>
+<!-- Architecture Stack -->
+<div class="flex flex-col gap-4 relative max-w-4xl">
+<!-- Background line connecting layers -->
+<div class="hidden md:block absolute left-[47px] top-8 bottom-8 w-[2px] bg-border-hairline z-0"></div>
+<!-- Layer 1 -->
+<div class="relative group z-10">
+<div class="absolute inset-0 bg-gradient-to-r from-architecture-cyan/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl"></div>
+<div class="flex flex-col md:flex-row items-start md:items-center gap-6 p-6 border border-border-hairline bg-surface-elevated rounded-xl group-hover:border-architecture-cyan/50 transition-colors relative z-10">
+<div class="w-12 h-12 rounded-lg bg-canvas-deep border border-border-hairline flex items-center justify-center shrink-0 group-hover:border-architecture-cyan/50 transition-colors">
+<span class="material-symbols-outlined text-architecture-cyan">business_center</span>
+</div>
+<div>
+<h3 class="font-ui-label text-lg text-text-primary mb-1 uppercase tracking-wider">Product &amp; Business</h3>
+<p class="font-metadata-mono text-metadata-mono text-text-secondary uppercase">Process analysis, requirements mapping, stakeholder alignment</p>
+</div>
+</div>
+</div>
+<!-- Layer 2 -->
+<div class="relative group z-10">
+<div class="absolute inset-0 bg-gradient-to-r from-business-amber/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl"></div>
+<div class="flex flex-col md:flex-row items-start md:items-center gap-6 p-6 border border-border-hairline bg-surface-elevated rounded-xl group-hover:border-business-amber/50 transition-colors relative z-10">
+<div class="w-12 h-12 rounded-lg bg-canvas-deep border border-border-hairline flex items-center justify-center shrink-0 group-hover:border-business-amber/50 transition-colors">
+<span class="material-symbols-outlined text-business-amber">schema</span>
+</div>
+<div>
+<h3 class="font-ui-label text-lg text-text-primary mb-1 uppercase tracking-wider">System Design</h3>
+<p class="font-metadata-mono text-metadata-mono text-text-secondary uppercase">ERD, API design, architectural documentation, service modeling</p>
+</div>
+</div>
+</div>
+<!-- Layer 3 -->
+<div class="relative group z-10">
+<div class="absolute inset-0 bg-gradient-to-r from-operational-green/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl"></div>
+<div class="flex flex-col md:flex-row items-start md:items-center gap-6 p-6 border border-border-hairline bg-surface-elevated rounded-xl group-hover:border-operational-green/50 transition-colors relative z-10">
+<div class="w-12 h-12 rounded-lg bg-canvas-deep border border-border-hairline flex items-center justify-center shrink-0 group-hover:border-operational-green/50 transition-colors">
+<span class="material-symbols-outlined text-operational-green">code</span>
+</div>
+<div>
+<h3 class="font-ui-label text-lg text-text-primary mb-1 uppercase tracking-wider">Engineering</h3>
+<p class="font-metadata-mono text-metadata-mono text-text-secondary uppercase">Java, Go, Next.js, SQL, REST APIs, UI implementation</p>
+</div>
+</div>
+</div>
+<!-- Layer 4 -->
+<div class="relative group z-10">
+<div class="absolute inset-0 bg-gradient-to-r from-primary-container/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl"></div>
+<div class="flex flex-col md:flex-row items-start md:items-center gap-6 p-6 border border-border-hairline bg-surface-elevated rounded-xl group-hover:border-primary-container/50 transition-colors relative z-10">
+<div class="w-12 h-12 rounded-lg bg-canvas-deep border border-border-hairline flex items-center justify-center shrink-0 group-hover:border-primary-container/50 transition-colors">
+<span class="material-symbols-outlined text-primary-container">groups</span>
+</div>
+<div>
+<h3 class="font-ui-label text-lg text-text-primary mb-1 uppercase tracking-wider">Collaboration</h3>
+<p class="font-metadata-mono text-metadata-mono text-text-secondary uppercase">Technical communication, team leadership, agile delivery</p>
+</div>
+</div>
+</div>
+</div>
+</section><section class="relative pt-section-gap-sm mb-section-gap-lg" id="journey"><div class="absolute left-0 top-0 w-full h-[1px] bg-border-hairline"></div><div class="absolute left-0 top-0 w-8 h-[1px] bg-architecture-cyan"></div><div class="mb-16 pt-8"><h2 class="font-section-heading text-section-heading text-text-primary mb-4 flex items-center gap-4 uppercase"><span class="material-symbols-outlined text-architecture-cyan">timeline</span>A GROWING SCOPE OF RESPONSIBILITY</h2><p class="font-body-main text-body-main text-text-secondary max-w-2xl">A chronological map of my evolution from writing code to architecting business solutions.</p></div><div class="relative max-w-4xl mx-auto py-12">
+<!-- Central Signal Line -->
+<div class="absolute left-1/2 top-0 bottom-0 w-[1px] bg-border-hairline -translate-x-1/2 z-0">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-2 h-2 bg-architecture-cyan rounded-full blur-sm"></div>
+<div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-2 h-2 bg-operational-green rounded-full blur-sm"></div>
+<div class="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-transparent via-architecture-cyan to-transparent animate-[data-stream_4s_linear_infinite]"></div>
+<style>
+@keyframes data-stream {
+  0% { transform: translateY(-100%); opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { transform: translateY(1000%); opacity: 0; }
+}
+@keyframes system-flicker {
+  0%, 100% { opacity: 1; }
+  5% { opacity: 0.4; }
+  10% { opacity: 0.8; }
+  15% { opacity: 0.2; }
+  20% { opacity: 0.9; }
+}
+.animate-flicker { animation: system-flicker 2s ease-in-out infinite alternate; }
+</style></div>
+<!-- Log Entry 01: Building Foundations -->
+<div class="relative mb-24 flex flex-col md:flex-row items-center justify-between group">
+<div class="md:w-[45%] text-right pr-8 hidden md:block">
+<div class="font-metadata-mono text-[10px] text-architecture-cyan uppercase tracking-widest mb-2 animate-flicker">LOG_ENTRY // 2022</div>
+<h3 class="font-ui-label text-xl text-text-primary uppercase">Building Foundations</h3>
+<p class="font-metadata-mono text-sm text-text-secondary">Teaching Assistant, UI</p>
+</div>
+<div class="relative z-10 w-4 h-4 rounded-full border-2 border-architecture-cyan bg-canvas-deep node-active"></div>
+<div class="md:w-[45%] pl-8 mt-4 md:mt-0">
+<div class="md:hidden font-metadata-mono text-[10px] text-architecture-cyan uppercase mb-2 animate-flicker">STG_01 // 2022</div>
+<div class="md:hidden font-ui-label text-lg text-text-primary uppercase mb-2">Building Foundations</div>
+<div class="space-y-2 border-l border-architecture-cyan/30 pl-4">
+<div class="flex flex-col"><span class="text-architecture-cyan font-metadata-mono text-[10px] uppercase animate-flicker">Context</span><span class="text-text-secondary text-sm">Programming Foundations 2</span></div>
+<div class="flex flex-col"><span class="text-architecture-cyan font-metadata-mono text-[10px] uppercase animate-flicker">Responsibility</span><span class="text-text-secondary text-sm">Java, application modeling</span></div>
+<div class="flex flex-col"><span class="text-architecture-cyan font-metadata-mono text-[10px] uppercase animate-flicker">Deliverables</span><span class="text-text-secondary text-sm">Technical explanation &amp; grading</span></div>
+</div>
+</div>
+</div>
+<!-- Log Entry 02: Delivering Features -->
+<div class="relative mb-24 flex flex-col md:flex-row-reverse items-center justify-between group">
+<div class="md:w-[45%] text-left pl-8 hidden md:block">
+<div class="font-metadata-mono text-[10px] text-text-secondary uppercase tracking-widest mb-2 animate-flicker">LOG_ENTRY // 2023</div>
+<h3 class="font-ui-label text-xl text-text-primary uppercase">Delivering Features</h3>
+<p class="font-metadata-mono text-sm text-text-secondary">Full-Stack Intern, Ciptadrasoft</p>
+</div>
+<div class="relative z-10 w-4 h-4 rounded-full border-2 border-border-hairline bg-canvas-deep"></div>
+<div class="md:w-[45%] pr-8 mt-4 md:mt-0 text-right">
+<div class="md:hidden font-metadata-mono text-[10px] text-text-secondary uppercase mb-2 animate-flicker">STG_02 // 2023</div>
+<div class="md:hidden font-ui-label text-lg text-text-primary uppercase mb-2">Delivering Features</div>
+<div class="space-y-2 border-r border-border-hairline pl-4 md:pl-0 md:pr-4">
+<div class="flex flex-col"><span class="text-text-primary font-metadata-mono text-[10px] uppercase animate-flicker">Context</span><span class="text-text-secondary text-sm">Enterprise Web Apps</span></div>
+<div class="flex flex-col"><span class="text-text-primary font-metadata-mono text-[10px] uppercase animate-flicker">Responsibility</span><span class="text-text-secondary text-sm">Next.js &amp; Node.js APIs</span></div>
+<div class="flex flex-col"><span class="text-text-primary font-metadata-mono text-[10px] uppercase animate-flicker">Deliverables</span><span class="text-text-secondary text-sm">Production-ready UI modules</span></div>
+</div>
+</div>
+</div>
+<!-- Log Entry 03: Designing Systems -->
+<div class="relative mb-24 flex flex-col md:flex-row items-center justify-between group">
+<div class="md:w-[45%] text-right pr-8 hidden md:block">
+<div class="font-metadata-mono text-[10px] text-business-amber uppercase tracking-widest mb-2 animate-flicker">LOG_ENTRY // 2023/24</div>
+<h3 class="font-ui-label text-xl text-text-primary uppercase">Designing Systems</h3>
+<p class="font-metadata-mono text-sm text-text-secondary">System Analyst, PT Perindo</p>
+</div>
+<div class="relative z-10 w-4 h-4 rounded-full border-2 border-business-amber bg-canvas-deep"></div>
+<div class="md:w-[45%] pl-8 mt-4 md:mt-0">
+<div class="md:hidden font-metadata-mono text-[10px] text-business-amber uppercase mb-2 animate-flicker">STG_03 // 2023/24</div>
+<div class="md:hidden font-ui-label text-lg text-text-primary uppercase mb-2">Designing Systems</div>
+<div class="space-y-2 border-l border-business-amber/30 pl-4">
+<div class="flex flex-col"><span class="text-business-amber font-metadata-mono text-[10px] uppercase animate-flicker">Context</span><span class="text-text-secondary text-sm">Fishery Supply Chain</span></div>
+<div class="flex flex-col"><span class="text-business-amber font-metadata-mono text-[10px] uppercase animate-flicker">Responsibility</span><span class="text-text-secondary text-sm">As-is/To-be, ERD, Spring Boot</span></div>
+<div class="flex flex-col"><span class="text-business-amber font-metadata-mono text-[10px] uppercase animate-flicker">Deliverables</span><span class="text-text-secondary text-sm">Full System Architecture</span></div>
+</div>
+</div>
+</div>
+<!-- Log Entry 04: Translating Business -->
+<div class="relative flex flex-col md:flex-row-reverse items-center justify-between group">
+<div class="md:w-[45%] text-left pl-8 hidden md:block">
+<div class="font-metadata-mono text-[10px] text-operational-green uppercase tracking-widest mb-2 animate-flicker">LOG_ENTRY // PRESENT</div>
+<h3 class="font-ui-label text-xl text-text-primary uppercase">Translating Business</h3>
+<p class="font-metadata-mono text-sm text-text-secondary">Solution Engineer Intern, Mekari</p>
+</div>
+<div class="relative z-10 w-4 h-4 rounded-full border-2 border-operational-green bg-canvas-deep"></div>
+<div class="md:w-[45%] pr-8 mt-4 md:mt-0 text-right">
+<div class="md:hidden font-metadata-mono text-[10px] text-operational-green uppercase mb-2 animate-flicker">STG_04 // PRESENT</div>
+<div class="md:hidden font-ui-label text-lg text-text-primary uppercase mb-2">Translating Business</div>
+<div class="space-y-2 border-r border-operational-green/30 pl-4 md:pl-0 md:pr-4">
+<div class="flex flex-col"><span class="text-operational-green font-metadata-mono text-[10px] uppercase animate-flicker">Context</span><span class="text-text-secondary text-sm">ERP Process Logic</span></div>
+<div class="flex flex-col"><span class="text-operational-green font-metadata-mono text-[10px] uppercase animate-flicker">Responsibility</span><span class="text-text-secondary text-sm">Warehouse &amp; Procurement</span></div>
+<div class="flex flex-col"><span class="text-operational-green font-metadata-mono text-[10px] uppercase animate-flicker">Deliverables</span><span class="text-text-secondary text-sm">Low-code Customizations</span></div>
+</div>
+</div>
+</div>
+</div></section><!-- Strong Intention Section -->
+<section class="relative pt-section-gap-sm mb-section-gap-lg overflow-hidden" id="archive">
+<div class="absolute inset-0 -z-10 opacity-20">
+<!-- STITCH_SHADER_START:ANIMATION_9 class="w-full h-full" -->
+<div class="w-full h-full" style="display:block;">
+<canvas id="shader-canvas-ANIMATION_9" style="display:block;width:100%;height:100%"></canvas>
+<script>
+(function() {
+  const canvas = document.getElementById('shader-canvas-ANIMATION_9');
+
+  // Sync the WebGL drawing-buffer size with the CSS-driven layout size.
+  // This fires on initial layout and whenever the element is resized.
+  function syncSize() {
+    const w = canvas.clientWidth  || 1280;
+    const h = canvas.clientHeight || 720;
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width  = w;
+      canvas.height = h;
+    }
+  }
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(syncSize).observe(canvas);
+  }
+  syncSize();
+
+  const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  if (!gl) return;
+  const vs = `attribute vec2 a_position;
+varying vec2 v_texCoord;
+void main() {
+  v_texCoord = a_position * 0.5 + 0.5;
+  gl_Position = vec4(a_position, 0.0, 1.0);
+}`;
+  const fs = `
+precision highp float;
+varying vec2 v_texCoord;
+uniform float u_time;
+uniform vec2 u_resolution;
+
+void main() {
+    vec2 uv = v_texCoord;
+    
+    // Create a scrolling grid pattern
+    float gridWidth = 0.005;
+    float gridSpacing = 0.1;
+    
+    float gridX = step(gridSpacing - gridWidth, mod(uv.x + u_time * 0.02, gridSpacing));
+    float gridY = step(gridSpacing - gridWidth, mod(uv.y + u_time * 0.01, gridSpacing));
+    
+    float grid = max(gridX, gridY);
+    
+    // Faint data flows
+    float flow = sin(uv.x * 20.0 + u_time * 2.0) * cos(uv.y * 10.0 + u_time * 1.5);
+    flow = smoothstep(0.8, 1.0, flow) * 0.1;
+    
+    // Background color
+    vec3 color = vec3(0.027, 0.043, 0.071); // #070B12 deep navy
+    
+    // Apply grid and flows
+    color += vec3(0.03, 0.08, 0.1) * grid * 0.3; // Muted blueprint grid
+    color += vec3(0.3, 0.79, 0.94) * flow; // Technology blue flows
+    
+    gl_FragColor = vec4(color, 1.0);
+}
+`;
+  function cs(type, src) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    return s;
+  }
+  const prog = gl.createProgram();
+  gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+  gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+  gl.linkProgram(prog);
+  gl.useProgram(prog);
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+  const pos = gl.getAttribLocation(prog, 'a_position');
+  gl.enableVertexAttribArray(pos);
+  gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+  const uTime = gl.getUniformLocation(prog, 'u_time');
+  const uRes = gl.getUniformLocation(prog, 'u_resolution');
+  const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+
+  // u_mouse is in pixel coordinates matching u_resolution (ShaderToy convention).
+  // Shaders that need normalized coords should use: u_mouse / u_resolution.
+  let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+  window.addEventListener('mousemove', (event) => {
+    const rect = canvas.getBoundingClientRect();
+    if (rect.width && rect.height) {
+      const nx = (event.clientX - rect.left) / rect.width;
+      const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+      mouse.x = nx * canvas.width;
+      mouse.y = ny * canvas.height;
+    }
+  });
+
+  function render(t) {
+    if (typeof ResizeObserver === 'undefined') syncSize();
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    if (uTime) gl.uniform1f(uTime, t * 0.001);
+    if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+    if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    requestAnimationFrame(render);
+  }
+  render(0);
+})();
+</script>
+</div>
+<!-- STITCH_SHADER_END:ANIMATION_9 -->
+</div>
+<div class="absolute left-0 top-0 w-full h-[1px] bg-border-hairline"></div>
+<div class="absolute left-0 top-0 w-8 h-[1px] bg-architecture-cyan"></div>
+<div class="mb-16 pt-8">
+<h2 class="font-section-heading text-section-heading text-text-primary mb-4 flex items-center gap-4 uppercase">
+<span class="material-symbols-outlined text-architecture-cyan">inventory_2</span>
+            Systems Archive
+        </h2>
+<p class="font-body-main text-body-main text-text-secondary max-w-2xl">
+            A comprehensive inventory of technical solutions, from enterprise resource planning to specialized logistics modules.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Card 1: Custom ERP -->
+<div class="md:col-span-7 bg-surface-elevated/50 backdrop-blur border border-border-hairline p-6 rounded-xl hover:border-architecture-cyan/50 transition-all group">
+<div class="flex justify-between items-start mb-6">
+<div>
+<div class="font-metadata-mono text-[10px] text-architecture-cyan uppercase mb-1">Enterprise Solution</div>
+<h3 class="font-ui-label text-xl text-text-primary uppercase">Custom ERP System</h3>
+</div>
+<span class="material-symbols-outlined text-text-secondary group-hover:text-architecture-cyan transition-colors">settings_suggest</span>
+</div>
+<div class="space-y-4 mb-8">
+<div class="flex gap-4 text-[10px] font-metadata-mono uppercase text-text-secondary">
+<span class="px-2 py-1 bg-canvas-deep border border-border-hairline rounded">Role: Lead Analyst</span>
+<span class="px-2 py-1 bg-canvas-deep border border-border-hairline rounded">Stack: Java / Spring</span>
+</div>
+<p class="text-sm text-text-secondary">Integrated multi-departmental workflows into a unified data architecture, reducing manual reconciliation by 40%.</p>
+</div>
+<div class="flex items-center gap-2 pt-4 border-t border-border-hairline">
+<div class="h-1 flex-1 bg-architecture-cyan rounded-full" title="Analysis"></div>
+<div class="h-1 flex-1 bg-architecture-cyan rounded-full" title="Design"></div>
+<div class="h-1 flex-1 bg-architecture-cyan rounded-full" title="Backend"></div>
+<div class="h-1 flex-1 bg-border-hairline rounded-full" title="Frontend"></div>
+</div>
+</div>
+<!-- Card 2: Ciptadra TMS -->
+<div class="md:col-span-5 bg-surface-elevated/50 backdrop-blur border border-border-hairline p-6 rounded-xl hover:border-business-amber/50 transition-all group">
+<div class="flex justify-between items-start mb-6">
+<div>
+<div class="font-metadata-mono text-[10px] text-business-amber uppercase mb-1">Logistics</div>
+<h3 class="font-ui-label text-xl text-text-primary uppercase">Ciptadra TMS</h3>
+</div>
+<span class="material-symbols-outlined text-text-secondary group-hover:text-business-amber transition-colors">local_shipping</span>
+</div>
+<div class="space-y-4 mb-8">
+<div class="flex gap-4 text-[10px] font-metadata-mono uppercase text-text-secondary">
+<span class="px-2 py-1 bg-canvas-deep border border-border-hairline rounded">Role: Full-Stack</span>
+<span class="px-2 py-1 bg-canvas-deep border border-border-hairline rounded">Stack: Next.js</span>
+</div>
+<p class="text-sm text-text-secondary">Developed real-time tracking modules for transport management, focusing on high-concurrency API performance.</p>
+</div>
+<div class="flex items-center gap-2 pt-4 border-t border-border-hairline">
+<div class="h-1 flex-1 bg-business-amber rounded-full" title="Analysis"></div>
+<div class="h-1 flex-1 bg-business-amber rounded-full" title="Design"></div>
+<div class="h-1 flex-1 bg-business-amber rounded-full" title="Backend"></div>
+<div class="h-1 flex-1 bg-business-amber rounded-full" title="Frontend"></div>
+</div>
+</div>
+<!-- Card 3: Sinsera -->
+<div class="md:col-span-4 bg-surface-elevated/50 backdrop-blur border border-border-hairline p-6 rounded-xl hover:border-operational-green/50 transition-all group">
+<div class="font-metadata-mono text-[10px] text-operational-green uppercase mb-1">Internal Tooling</div>
+<h3 class="font-ui-label text-xl text-text-primary uppercase mb-4">Sinsera</h3>
+<p class="text-sm text-text-secondary mb-6">Automated reporting engine for internal audit compliance and data integrity verification.</p>
+<div class="flex items-center gap-2 pt-4 border-t border-border-hairline">
+<div class="h-1 flex-1 bg-operational-green rounded-full"></div>
+<div class="h-1 flex-1 bg-operational-green rounded-full"></div>
+<div class="h-1 flex-1 bg-border-hairline rounded-full"></div>
+<div class="h-1 flex-1 bg-border-hairline rounded-full"></div>
+</div>
+</div>
+<!-- Card 4: Priority B Projects -->
+<div class="md:col-span-8 bg-surface-elevated/50 backdrop-blur border border-border-hairline p-6 rounded-xl hover:border-primary-container/50 transition-all group">
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-ui-label text-xl text-text-primary uppercase">Specialized Modules</h3>
+<span class="font-metadata-mono text-[10px] text-text-secondary">VARIOUS // 2022-2024</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-3 bg-canvas-deep/50 rounded border border-border-hairline">
+<div class="text-xs text-text-primary uppercase mb-1">Inventory Sync</div>
+<div class="text-[10px] text-text-secondary">Real-time warehouse reconciliation</div>
+</div>
+<div class="p-3 bg-canvas-deep/50 rounded border border-border-hairline">
+<div class="text-xs text-text-primary uppercase mb-1">Auth Gateway</div>
+<div class="text-[10px] text-text-secondary">RBAC implementation for legacy systems</div>
+</div>
+</div>
+</div>
+</div>
+</section><section class="relative pt-section-gap-sm mb-section-gap-lg" id="intention">
+<div class="absolute left-0 top-0 w-full h-[1px] bg-border-hairline"></div>
+<div class="absolute left-0 top-0 w-8 h-[1px] bg-business-amber"></div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-desktop items-center pt-16">
+<div class="col-span-1 md:col-span-7">
+<h2 class="font-section-title text-section-title text-text-primary mb-8 uppercase">The kind of architect I intend to become.</h2>
+<div class="font-body-lead text-body-lead text-text-secondary space-y-6 max-w-2xl">
+<p>I believe that great software isn't just about clean code; it's about the alignment between business logic and technical architecture. My goal is to bridge the gap between high-level strategy and low-level implementation.</p>
+<p>I am building a career where I can design systems that are not only robust and scalable but also deeply intuitive to the business processes they serve. I intend to be the architect who understands the 'why' as clearly as the 'how'.</p>
+</div>
+</div>
+<div class="col-span-1 md:col-span-5 relative h-[500px] flex items-center justify-center">
+<!-- Career Direction Map Visualization -->
+<div class="relative w-full h-full flex flex-col justify-between py-12">
+<!-- Path Line -->
+<div class="absolute left-1/2 top-12 bottom-12 w-[1px] bg-gradient-to-b from-architecture-cyan via-text-secondary to-business-amber -translate-x-1/2"></div>
+<!-- Node: NOW -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-3 h-3 rounded-full bg-architecture-cyan mb-2 shadow-[0_0_10px_rgba(115,224,230,0.5)]"></div>
+<div class="bg-surface-elevated border border-architecture-cyan/30 p-3 rounded-lg text-center">
+<div class="font-metadata-mono text-[10px] text-architecture-cyan uppercase mb-1">Now</div>
+<div class="font-ui-label text-xs text-text-primary uppercase">System Analyst +<br/>Full-Stack Engineer</div>
+</div>
+</div>
+<!-- Node: GROWING THROUGH -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-3 h-3 rounded-full bg-text-secondary mb-2"></div>
+<div class="bg-surface-elevated border border-border-hairline p-3 rounded-lg text-center">
+<div class="font-metadata-mono text-[10px] text-text-secondary uppercase mb-1">Growing Through</div>
+<div class="font-ui-label text-[10px] text-text-secondary uppercase space-y-1">
+<div>Product Understanding</div>
+<div>Solution Engineering</div>
+<div>System Design</div>
+</div>
+</div>
+</div>
+<!-- Node: DIRECTION -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-4 h-4 rounded-full bg-business-amber mb-2 node-active shadow-[0_0_15px_rgba(243,181,98,0.5)]"></div>
+<div class="bg-surface-elevated border border-business-amber/50 p-4 rounded-lg text-center">
+<div class="font-metadata-mono text-[10px] text-business-amber uppercase mb-1">Direction</div>
+<div class="font-ui-label text-sm text-text-primary font-bold uppercase tracking-widest">Solution Architect</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="relative pt-section-gap-sm pb-section-gap-lg" id="contact">
+<div class="absolute left-0 top-0 w-full h-[1px] bg-border-hairline"></div>
+<div class="absolute left-0 top-0 w-8 h-[1px] bg-operational-green"></div>
+<div class="max-w-4xl mx-auto text-center pt-16">
+<h2 class="font-section-heading text-section-heading text-text-primary mb-6 uppercase">Let’s discuss the system behind the idea.</h2>
+<p class="font-body-lead text-body-lead text-text-secondary mb-12 max-w-2xl mx-auto">
+            Whether it starts with a business process, a product idea, or a technical challenge, I’d be glad to understand the problem and explore what the right system could look like.
+        </p>
+<div class="flex flex-col items-center gap-8">
+<a class="bg-architecture-cyan text-on-primary font-ui-label text-lg px-12 py-4 rounded-xl hover:bg-architecture-cyan/90 transition-all uppercase tracking-widest flex items-center gap-3 group" href="mailto:sayyidthariq02@gmail.com">
+                Email me
+                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">mail</span>
+</a>
+<div class="flex items-center gap-8 font-metadata-mono text-metadata-mono text-text-secondary uppercase tracking-widest">
+<a class="hover:text-architecture-cyan transition-colors" href="#">LinkedIn</a>
+<a class="hover:text-architecture-cyan transition-colors" href="#">GitHub</a>
+<a class="hover:text-architecture-cyan transition-colors" href="#">Download CV</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer Component -->
+<footer class="bg-canvas-deep w-full py-12 px-6 md:px-margin-desktop border-t border-border-hairline opacity-80 hover:opacity-100 transition-opacity">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-gutter-desktop">
+<div class="font-metadata-mono text-metadata-mono text-architecture-cyan uppercase tracking-tighter font-bold">
+            STGM
+        </div>
+<div class="font-metadata-mono text-metadata-mono text-text-secondary uppercase">
+            Based in Indonesia · Open to meaningful systems and product work
+        </div>
+<div class="flex gap-6 font-metadata-mono text-metadata-mono">
+<span class="text-operational-green">Status: Operational</span>
+<a class="text-text-secondary hover:text-architecture-cyan transition-colors" href="#">Contact</a>
+<a class="text-text-secondary hover:text-architecture-cyan transition-colors" href="#">LinkedIn</a>
+<a class="text-text-secondary hover:text-architecture-cyan transition-colors" href="#">GitHub</a>
+</div>
+</div>
+<div class="mt-8 text-center font-metadata-mono text-[10px] text-text-secondary uppercase tracking-widest">
+        © 2024 STGM ARCHITECTURAL SYSTEMS
+    </div>
+</footer>
+</main>
+</body></html>
