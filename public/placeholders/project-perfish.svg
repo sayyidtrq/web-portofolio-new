@@ -1,0 +1,19 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" rx="56" fill="#070B12"/>
+  <path d="M0 0h1600v1000H0z" fill="url(#grid)" opacity=".65"/>
+  <rect x="130" y="110" width="1340" height="780" rx="34" fill="#101827" stroke="#263246" stroke-width="3"/>
+  <rect x="194" y="186" width="430" height="118" rx="20" fill="#0A101B" stroke="#73E0E6" stroke-opacity=".65"/>
+  <rect x="194" y="350" width="1212" height="82" rx="18" fill="#0A101B" stroke="#263246"/>
+  <rect x="194" y="470" width="1212" height="82" rx="18" fill="#0A101B" stroke="#263246"/>
+  <rect x="194" y="590" width="1212" height="82" rx="18" fill="#0A101B" stroke="#263246"/>
+  <rect x="194" y="710" width="1212" height="82" rx="18" fill="#0A101B" stroke="#263246"/>
+  <circle cx="1218" cy="244" r="86" fill="#073136" stroke="#73E0E6" stroke-width="3"/>
+  <path d="M1166 244h104M1218 192v104" stroke="#73E0E6" stroke-width="5" stroke-linecap="round"/>
+  <text x="232" y="257" fill="#F2F5F7" font-family="monospace" font-size="42" font-weight="700" letter-spacing="5">PERFISH OVERVIEW</text>
+  <text x="232" y="858" fill="#73E0E6" font-family="monospace" font-size="27" font-weight="700" letter-spacing="3">DROP REAL SCREENSHOT HERE</text>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" stroke="#73E0E6" stroke-opacity=".12"/>
+    </pattern>
+  </defs>
+</svg>

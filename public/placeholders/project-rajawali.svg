@@ -1,0 +1,19 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" rx="56" fill="#070B12"/>
+  <path d="M0 0h1600v1000H0z" fill="url(#grid)" opacity=".6"/>
+  <rect x="124" y="116" width="1352" height="768" rx="34" fill="#101827" stroke="#263246" stroke-width="3"/>
+  <rect x="196" y="194" width="560" height="88" rx="18" fill="#0A101B" stroke="#F3B562" stroke-opacity=".7"/>
+  <rect x="196" y="350" width="350" height="370" rx="24" fill="#0A101B" stroke="#263246"/>
+  <rect x="625" y="350" width="350" height="370" rx="24" fill="#0A101B" stroke="#263246"/>
+  <rect x="1054" y="350" width="350" height="370" rx="24" fill="#0A101B" stroke="#263246"/>
+  <rect x="240" y="438" width="260" height="170" rx="20" fill="#241B10" stroke="#F3B562" stroke-opacity=".45"/>
+  <rect x="669" y="438" width="260" height="170" rx="20" fill="#241B10" stroke="#F3B562" stroke-opacity=".45"/>
+  <rect x="1098" y="438" width="260" height="170" rx="20" fill="#241B10" stroke="#F3B562" stroke-opacity=".45"/>
+  <text x="232" y="252" fill="#F2F5F7" font-family="monospace" font-size="40" font-weight="700" letter-spacing="4">RAJAWALI LELANG PREVIEW</text>
+  <text x="232" y="814" fill="#F3B562" font-family="monospace" font-size="27" font-weight="700" letter-spacing="3">DROP HOMEPAGE / LISTING SCREENSHOT HERE</text>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" stroke="#F3B562" stroke-opacity=".10"/>
+    </pattern>
+  </defs>
+</svg>
